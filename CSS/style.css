@@ -50,8 +50,21 @@ a{
 .personal_detail_headings{
     font-size:1.1vw;
 }
-.personal_details_title{
+#personal_details_title{
     margin-left:11vw;
     font-size:2.5vw;
     color:white
+}
+#personal_details_title:hover{
+    color:orange;
+}
+#academic_details_title{
+    margin-left:37vw;
+    font-size:1.5vw;
+    color:black;
+}
+#subject_details_title{
+    margin-left:37.5vw;
+    font-size:1.5vw;
+    color:black;
 }
