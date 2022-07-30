@@ -4,7 +4,7 @@ li{
     font-weight: bold;
     font-size: 20px;
 }
-#mid_section {
+#main_page {
     height:78vh;
     width:100vw;
     position:absolute;
@@ -35,7 +35,7 @@ li{
 .table{
     font-size: 1vw;
 }
-th{
+.main_page_navbars{
     text-align:center;
     font-size:1.5vw;
 }
@@ -46,4 +46,12 @@ td{
 a{
     text-decoration: none;
     color:blue;
+}
+.personal_detail_headings{
+    font-size:1.1vw;
+}
+.personal_details_title{
+    margin-left:11vw;
+    font-size:2.5vw;
+    color:white
 }
