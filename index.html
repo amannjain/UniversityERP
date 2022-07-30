@@ -7,30 +7,218 @@
     <title>LMS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <section>
+    <section id="top_section">
     <div class="container-fluid bg-dark">
         <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
             <a href="#" class="navbar-brand">
-                <img src="Images/LOGO_UNI.png" alt="University_Logo" width="300px" height="70px" style="margin-left: 20px;">
+                <img src="Images/LOGO_UNI.png" alt="University_Logo" width="300vw" height="70vh" style="margin-left: 20px;">
             </a>
-            <a href="#" class="navbar-brand" style="margin-left: 460px;">
-                <img src="Images/ERP.png" alt="ERP_Logo" width="200px" height="40px">
+            <a href="#" class="navbar-brand" style="margin-left: 27vw;">
+                <img src="Images/ERP.png" alt="ERP_Logo" width="180vw" height="40vh">
             </a>
-            <p class="navbar-brand" style="margin-left: 550px;margin-top:10px;font-size: 30px;">Aman Jain</p>
+            <p class="navbar-brand" style="margin-left: 32vw;margin-top:2vh;font-size: 1.5vw;color:yellow">Aman Jain</p>
         </nav>
     </div>
-    <div id="links">
-        <ul type="none">
-            <li class="btn btn-dark dropdown" style="border-radius:0;font-size: 20px;">Personal Info</li>
-            <li class="btn btn-dark dropdown" style="border-radius:0;font-size: 20px;">Academic Details</li>
-            <li class="btn btn-dark dropdown" style="border-radius:0;font-size: 20px;">Hostel Facility</li>
-            <li class="btn btn-dark dropdown" style="border-radius:0;font-size: 20px;">Transport Facility</li>
-            <li class="btn btn-dark dropdown" style="border-radius:0;font-size: 20px;">Fee Payment</li>
-            <li class="btn btn-dark dropdown" style="border-radius:0;font-size: 20px;">Surveys and Forms</li>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="display:flex;flex-direction:row;justify-content:space-around">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Student Details</a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Personal Details</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Academic Details</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Apply Duty/Medical Leave</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Academic Calendar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Academic Details</a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Marks</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Attendance</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Time Table</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Report Card</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Resources</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Hostel Facility</a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Hostel Enrollment</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Hostel Details</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Hostel Fee Payment</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Apply Gatepass</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Hostel Checkout</a></li>
+                </ul>
+              </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Transport Facility</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item bg-dark sub_menu" href="#">Transport Enrollment</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#">Route Details</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#">Transport Fee Payment</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#">Transport Discontinue</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Fee Payment</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item bg-dark sub_menu" href="#">Academic Fee</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#">Fines and Dues</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#">Fee Payment History</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Surveys and Forms</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item bg-dark sub_menu" href="#">Faculty Feedback</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#">Academic Feedback</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#">Register a Complaint/Problem</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#">Student Survey</a></li>
+            </ul>
+          </li>
         </ul>
-    </div>
+  </nav>
+    </section>
+    <section id="mid_section" class="bg-dark">
+       <div class="container-fluid content_div">
+        <nav class="navbar navbar-expand-sm" style="background-color:orangered">
+        <a href="#" class="heading_title navbar-brand">NOTICES</a>
+      </nav>
+      <table class="table table-hover table-responsive table-borderless table-danger">
+        <tr style="align-items: center;">
+          <th class="table-dark">Notice</th>
+          <th class="table-dark">Department</th>
+          <th class="table-dark">Batch</th>
+          <th class="table-dark">Date</th>
+        </tr>
+        <tr class="table-danger">
+          <td><a href="#">Notice 13010</a></td>
+          <td>BE CSE</td>
+          <td>2020</td>
+          <td>30 July 2022</td>
+        </tr>
+        <tr>
+          <td><a href="#">Notice 12990</a></td>
+          <td>BBA</td>
+          <td>2021</td>
+          <td>28 July 2022</td>
+        </tr>
+        <tr class="table-danger">
+          <td><a href="#">Notice 12980</a></td>
+          <td>Hotel Management</td>
+          <td>2021</td>
+          <td>28 July 2022</td>
+        </tr>
+        <tr class="table-danger">
+          <td><a href="#">Notice 12970</a></td>
+          <td>BTech Civil</td>
+          <td>2020</td>
+          <td>26 July 2022</td>
+        </tr>
+        <tr>
+          <td><a href="#">Notice 12960</a></td>
+          <td>Pharmacy</td>
+          <td>2021</td>
+          <td>26 July 2022</td>
+        </tr>
+        <tr>
+          <td><a href="#">Notice 12950</a></td>
+          <td>BE ECE</td>
+          <td>2020</td>
+          <td>20 July 2022</td>
+        </tr>
+        <tr>
+          <td><a href="#">Notice 12940</a></td>
+          <td>B. Design</td>
+          <td>2021</td>
+          <td>18 July 2022</td>
+        </tr>
+        <tr class="table-danger">
+          <td><a href="#">Notice 12930</a></td>
+          <td>BE CSE</td>
+          <td>2021</td>
+          <td>15 July 2022</td>
+        </tr>
+        <tr>
+          <td><a href="#">Notice 12920</a></td>
+          <td>B. Arch</td>
+          <td>2021</td>
+          <td>12 July 2022</td>
+        </tr>
+        <tr>
+          <td><a href="#">Notice 12910</a></td>
+          <td>Hotel Management</td>
+          <td>2020</td>
+          <td>12 July 2022</td>
+        </tr>
+      </table>
+       </div> 
+
+       <div class="container-fluid content_div">
+        <nav class="navbar navbar-expand-sm" style="background-color:orangered">
+          <a href="#" class="heading_title navbar-brand">EVENTS</a>
+        </nav>
+        <table class="table table-hover table-responsive table-borderless table-primary">
+          <tr style="align-items: center;">
+            <th class="table-dark">Name</th>
+            <th class="table-dark">Organization</th>
+            <th class="table-dark">Date</th>
+          </tr>
+          <tr>
+            <td><a href="#">Roadmap to Full Stack Development</a></td>
+            <td>IEEE JIET</td>
+            <td>5 August 2022</td>
+          </tr>
+          <tr>
+            <td><a href="#">Bootcamp on NodeJS</a></td>
+            <td>IEI</td>
+            <td>8 to 12 August 2022</td>
+          </tr>
+          <tr>
+            <td><a href="#">Mind Mapping with Vasu</a></td>
+            <td>GDSC JIET</td>
+            <td>10 August 2022</td>
+          </tr>
+          <tr>
+            <td><a href="#">Independence Day Celebration</a></td>
+            <td>OSA</td>
+            <td>15 August 2022</td>
+          </tr>
+          <tr>
+            <td><a href="#">Boost your Soft Skills</a></td>
+            <td>ACM JIET</td>
+            <td>19 August 2022</td>
+          </tr>
+          <tr>
+            <td><a href="#">Magical Night with Martin Garrix</a></td>
+            <td>OSA</td>
+            <td>20 Auguest 2022</td>
+          </tr>
+          <tr>
+            <td><a href="#">Logo Designing Competition</a></td>
+            <td>Art Society UOJ</td>
+            <td>26 August 2022</td>
+          </tr>
+          <tr>
+            <td><a href="#">Talent Hunt</a></td>
+            <td>OSA</td>
+            <td>2 to 3 September 2022</td>
+          </tr>
+          <tr>
+            <td><a href="#">Everything about Data Science and ML </a></td>
+            <td>DCSE</td>
+            <td>9 to 13 September 2022</td>
+          </tr>
+          <tr>
+            <td><a href="#">TEDx with Aman Jain</a></td>
+            <td>IEEE UIET</td>
+            <td>16 September 2022</td>
+          </tr>
+        </table>
+       </div> 
     </section>
 </body>
 </html>
