@@ -142,3 +142,64 @@ a{
     font-size:2.5vw;
     color:white;
 }
+.payment{
+    height:38vh;
+    width:40vw;
+    position:absolute;
+    top:35vh;
+    left:28vw;
+    border-style:solid;
+    border-width:0.5vw;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    padding:0.5vw;
+}
+.payment_gateway{
+    height:100%;
+    width:100%;
+    /* border:0.5vw solid red; */
+    margin-right:0.5vw;
+}
+.payment_gateway_title{
+    color:white;
+    font-size:1.2vw;
+    margin-left:3vw;
+}
+.tnc{
+    height:12vh;
+    width:40vw;
+    position:absolute;
+    top:20vh;
+    left:10vw;
+    padding:0.5vw;;
+}
+#fees_title{
+    font-weight:700;
+    font-size: 1.3vw;
+}
+#fees{
+    color:red;
+    margin-left:10vw;
+    font-weight:700;
+    font-size: 1.3vw;
+}
+#agree{
+    margin-left:2vw;
+    font-size: 1vw;
+}
+.fine_details_title{
+    margin-left:11vw;
+    font-size:2.5vw;
+    color:white;
+}
+#pay_fine{
+    position:absolute;
+    top:61vh;
+    left:21vw;
+}
+.fee_payment_history_title{
+    margin-left:30vw;
+    font-size:2.5vw;
+    color:white;
+}
