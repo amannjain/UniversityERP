@@ -22,3 +22,9 @@ function applycheckout(){
         window.alert("Checkout Request Successfully Registered");
     };
 }
+
+function discontinue(){
+    if(confirm("Are you sure you want to discontinue") == true){
+        window.alert("Discontinue Request Successfully Registered");
+    };
+}

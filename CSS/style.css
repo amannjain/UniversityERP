@@ -127,3 +127,18 @@ a{
     font-size:2.5vw;
     color:white;
 }
+.transport_details_title{
+    margin-left:11vw;
+    font-size:2.5vw;
+    color:white;
+}
+.transport_fees_title{
+    margin-left:7vw;
+    font-size:2.5vw;
+    color:white;
+}
+.transport_discontinue_title{
+    margin-left:7vw;
+    font-size:2.5vw;
+    color:white;
+}
