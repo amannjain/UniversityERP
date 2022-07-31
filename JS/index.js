@@ -17,6 +17,7 @@ function applymedicalleave(){
     cell2.innerHTML = document.getElementById("date_from").value;
     cell3.innerHTML = document.getElementById("date_to").value;
     cell4.innerHTML = "Pending";
+    window.alert("Successfully Applied")
 }
 // THIS FUNCTION IS TO APPEND GATEPASS DETAILS IN THE HISTORY
 function applygatepass(){
@@ -30,6 +31,7 @@ function applygatepass(){
     cell2.innerHTML = document.getElementById("from_date").value;
     cell3.innerHTML = document.getElementById("to_date").value;
     cell4.innerHTML = "Pending";
+    window.alert("Successfully Applied")
 }
 
 function applycheckout(){
@@ -42,6 +44,9 @@ function discontinue(){
     if(confirm("Are you sure you want to discontinue") == true){
         window.alert("Discontinue Request Successfully Registered");
     };
+}
+function submitfeedback(){
+    window.alert("Thank you for the Feedback");
 }
 function submit_suggestion(){
         window.alert("Thank You for your Suggestion");
