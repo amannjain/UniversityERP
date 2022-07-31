@@ -100,3 +100,14 @@ a{
     font-size:2vw;
     color:black;
 }
+.result_page{
+    height:130vh;
+    width:100vw;
+    position:absolute;
+    top:20vh;
+    border-style:solid;
+    border-width:1px;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
