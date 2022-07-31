@@ -203,3 +203,18 @@ a{
     font-size:2.5vw;
     color:white;
 }
+.options{
+    margin-left: 3vw;
+}
+
+.labels{
+    margin-left: 1vw;
+}
+.suggestions_title{
+    margin-left: 12vw;
+    font-size:2.5vw;
+    color:white;
+}
+.hidden_pages{
+    display:none;
+}

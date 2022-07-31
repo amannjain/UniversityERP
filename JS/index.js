@@ -28,3 +28,6 @@ function discontinue(){
         window.alert("Discontinue Request Successfully Registered");
     };
 }
+function submit_suggestion(){
+        window.alert("Thank You for your Suggestion");
+    };
