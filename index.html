@@ -29,51 +29,51 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Student Info</a>
                 <ul class="dropdown-menu bg-dark">
-                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="personal_detail_show()">Personal Details</a></li>
-                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Academic Details</a></li>
-                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Apply Medical Leave</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_personal_details()">Personal Details</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_academic_details()">Academic Details</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_apply_leave()">Apply Medical Leave</a></li>
                   <!-- <li><a class="dropdown-item bg-dark sub_menu" href="#">Academic Calendar</a></li> -->
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Academic Info</a>
                 <ul class="dropdown-menu bg-dark">
-                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Marks</a></li>
-                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Attendance</a></li>
-                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Time Table</a></li>
-                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Report Card</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_marks()">Marks</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_attendance()">Attendance</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_timetable()">Time Table</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_reportcard()">Report Card</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Hostel Facility</a>
                 <ul class="dropdown-menu bg-dark">
-                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Hostel Details</a></li>
-                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Hostel Fee Payment</a></li>
-                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Request Gatepass</a></li>
-                  <li><a class="dropdown-item bg-dark sub_menu" href="#">Request Hostel Checkout</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_hostel_details()">Hostel Details</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_hostel_fee_payment()">Hostel Fee Payment</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_gatepass()">Request Gatepass</a></li>
+                  <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_checkout()">Request Hostel Checkout</a></li>
                 </ul>
               </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Transport Facility</a>
             <ul class="dropdown-menu bg-dark">
-              <li><a class="dropdown-item bg-dark sub_menu" href="#">Transport Details</a></li>
-              <li><a class="dropdown-item bg-dark sub_menu" href="#">Transport Fee Payment</a></li>
-              <li><a class="dropdown-item bg-dark sub_menu" href="#">Transport Discontinue</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_transport_details()">Transport Details</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_transport_fee_payment()">Transport Fee Payment</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_discontinue()">Transport Discontinue</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Fee Payment</a>
             <ul class="dropdown-menu bg-dark">
-              <li><a class="dropdown-item bg-dark sub_menu" href="#">Academic Fee</a></li>
-              <li><a class="dropdown-item bg-dark sub_menu" href="#">Fines and Dues</a></li>
-              <li><a class="dropdown-item bg-dark sub_menu" href="#">Fee Payment History</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_academic_fee()">Academic Fee</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_fines_and_dues()">Fines and Dues</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_fee_payment_history()">Fee Payment History</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">Surveys and Forms</a>
             <ul class="dropdown-menu bg-dark">
-              <li><a class="dropdown-item bg-dark sub_menu" href="#">Faculty Feedback</a></li>
-              <li><a class="dropdown-item bg-dark sub_menu" href="#">Suggestions</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_faculty_feedback()">Faculty Feedback</a></li>
+              <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_suggestions()">Suggestions</a></li>
             </ul>
           </li>
         </ul>
@@ -388,35 +388,27 @@
     <form action="#" style="margin-top:5vh;">
       <label for="form_questions" class="form_questions">Leave required date: </label>
         <label class="form_options_calendar">From</label>
-        <input type="date" value="From">
+        <input type="date" value="From" id="date_from">
         <label class="form_options_calendar">To</label>
-        <input type="date" value="To">
+        <input type="date" value="To" id="date_to">
         <div style="margin-top:5vh;">
         <label for="form_questions" class="form_questions">Upload your Medical:</label>
         <input type="file" name="Medical" class="form_options_calendar">
       </div>
         <div  id="submit_button">
-          <button type="button" class="btn btn-outline-success btn-lg">Apply</button>
+          <button type="button" class="btn btn-outline-success btn-lg" onclick="applymedicalleave()">Apply</button>
         </div>
     </form>
 
     <nav class="navbar navbar-expand-sm">
       <a href="#" class="navbar-brand" id="leave_request_title">Leave Request Status</a>
     </nav>
-    <table class="table table-hover table-responsive table-borderless table-striped table-success">
+    <table class="table table-hover table-responsive table-borderless table-striped table-success" id="medical_table">
       <tr style="text-align:center">
         <th class="table-dark">Sr. No.</th>
         <th class="table-dark">From</th>
         <th class="table-dark">To</th>
-        <th class="table-dark">Medical</th>
-        <th class="table-dark">Status</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <th class="table-dark">Status</th> 
       </tr>
     </table>
 </section>
@@ -818,7 +810,7 @@
  </section>
  
   <!-- THIS IS THE SECTION FOR ACADEMIC INFO -> TIME TABLE -->
-  <section id="academic_attendance" class="hidden_pages main_page bg-dark">
+  <section id="academic_timetable" class="hidden_pages main_page bg-dark">
 
     <div class="container-fluid content_div" style="width: 90vw;height:75vh;">
       <nav class="navbar navbar-expand-sm">
@@ -1284,7 +1276,7 @@
    <tr>
      <th>Date</th>
      <td>:</td>
-     <td id="curr_date">n</td>
+     <td id="curr_date"></td>
    </tr>
    <tr>
      <th>Leave Required From</th>
@@ -1328,14 +1320,14 @@
   <section id="hostel_checkout" class="hidden_pages main_page bg-dark">
   <div class="container-fluid content_div">
    <nav class="navbar navbar-expand-sm bg-danger">
-   <a href="#" class="hostel_gatepass_title navbar-brand" style="color:white">Hostel Checkout</a>
+   <a href="#" class="hostel_checkout_title navbar-brand" style="color:white">Hostel Checkout</a>
  </nav>
  <table class="table table-hover table-responsive table-borderless table-secondary" style="text-align:center;font-size:1.2vw">
   
    <tr>
      <th>Date</th>
      <td>:</td>
-     <td id="curr_date">n</td>
+     <td id="now_date"></td>
    </tr>
    <tr>
      <th>Name</th>
@@ -1574,7 +1566,7 @@
    <tr>
      <th>Date</th>
      <td>:</td>
-     <td id="curr_date">n</td>
+     <td id="today_date">n</td>
    </tr>
    <tr>
      <th>Name</th>
@@ -1606,7 +1598,7 @@
 </section>
 
   <!-- THIS SECTION IS FOR FEE PAYMENT -> ACADEMIC FEE -->
-  <section id="academic_details" class="hidden_pages main_page bg-dark">
+  <section id="academic_fee" class="hidden_pages main_page bg-dark">
     <div class="container-fluid content_div" style="width: 90vw;height:75vh;">
       <nav class="navbar navbar-expand-sm">
         <a href="#" class="navbar-brand" id="academic_details_title">Academic Fee Details</a>
@@ -1736,7 +1728,6 @@
        </div> 
     </section>
 
-
   <!-- THIS SECTION IS FOR FEE PAYMENT -> FEE PAYMENT HISTORY -->
   <section id="fee_payment_history" class="hidden_pages main_page bg-dark">
 
@@ -1799,24 +1790,24 @@
  </section>
 
   <!-- THIS SECTION IS FOR SURVEYS AND FORMS -> FACULTY FEEDBACK -->
-  <section id="faculty__feedback" class="hidden_pages main_page bg-dark">
+  <section id="faculty_feedback" class="hidden_pages main_page bg-dark">
     <div class="container-fluid content_div" style="width: 90vw;height:75vh;">
       <nav class="navbar navbar-expand-sm">
         <a href="#" class="navbar-brand" id="marks_title">Marks</a>
         <select class="form-select" style="width:10vw;margin-left:30vw">
           <option selected>Choose Subject</option>
-          <option value="1" id="subject_1">PIJ</option>
-          <option value="2" id="subject_2">FSD</option>
-          <option value="3" id="subject_3">DevOps</option>
-          <option value="3" id="subject_4">SD</option>
-          <option value="3" id="subject_5">BC</option>
-          <option value="3" id="subject_6">ES</option>
+          <option value="1" id="subject_1" onclick="teacher_PIJ()">PIJ</option>
+          <option value="2" id="subject_2" onclick="teacher_FSD()">FSD</option>
+          <option value="3" id="subject_3" onclick="teacher_DevOps()">DevOps</option>
+          <option value="3" id="subject_4" onclick="teacher_SD()">SD</option>
+          <option value="3" id="subject_5" onclick="teacher_BC()">BC</option>
+          <option value="3" id="subject_6" onclick="teacher_ES()">ES</option>
         </select>
       </nav>
       
   <>
     <table class="table table-hover table-responsive table-borderless table-striped" style="text-align:center">
-      <tr><th>Teacher Name</th><td>:</td><td><span>Dr. Aakash Sinha</span></td></tr>
+      <tr><th>Teacher Name</th><td>:</td><td><span id="teacher_name"></span></td></tr>
     </table>
   <table class="table table-hover table-responsive table-borderless table-striped" style="text-align:center">
     <tr>
@@ -1828,7 +1819,7 @@
       <td>1</td>
       <td>The teacher has good knowledge of the subject.</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1" checked>
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
         <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
@@ -1844,7 +1835,7 @@
       <td>2</td>
       <td>The teacher explains each and every topic properly with examples.</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1" checked>
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
         <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
@@ -1860,7 +1851,7 @@
       <td>3</td>
       <td>The teacher gives practical and industry level knowledge along with theory.</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1" checked>
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
         <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
@@ -1876,7 +1867,7 @@
       <td>4</td>
       <td>The teacher focuses on each and every student.</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1" checked>
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
         <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
@@ -1892,7 +1883,7 @@
       <td>5</td>
       <td> The teacher takes and clears doubts properly.</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1" checked>
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
         <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
@@ -1908,7 +1899,7 @@
       <td>6</td>
       <td> The teacher is punctual in the class.</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1" checked>
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
         <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
@@ -1924,7 +1915,7 @@
       <td>7</td>
       <td>How much satisfied are you with you teacher?</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1" checked>
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
         <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>

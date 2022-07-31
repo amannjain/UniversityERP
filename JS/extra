@@ -1,90 +1,3 @@
-// THIS FUNCTION IS FOR PRINTING DATE ON GATEPASS
-const d = new Date();
-const currdate = d.toDateString();
-document.getElementById("curr_date").innerHTML = currdate;
-document.getElementById("now_date").innerHTML = currdate;
-document.getElementById("today_date").innerHTML = currdate;
-
-let count = 5;
-function applymedicalleave(){
-    var table = document.getElementById("medical_table");
-    var row = table.insertRow(1);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-    var cell3 = row.insertCell(2);
-    var cell4 = row.insertCell(3);
-    cell1.innerHTML = count--;
-    cell2.innerHTML = document.getElementById("date_from").value;
-    cell3.innerHTML = document.getElementById("date_to").value;
-    cell4.innerHTML = "Pending";
-}
-// THIS FUNCTION IS TO APPEND GATEPASS DETAILS IN THE HISTORY
-function applygatepass(){
-    var table = document.getElementById("gatepass_table");
-    var row = table.insertRow(1);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-    var cell3 = row.insertCell(2);
-    var cell4 = row.insertCell(3);
-    cell1.innerHTML = currdate;
-    cell2.innerHTML = document.getElementById("from_date").value;
-    cell3.innerHTML = document.getElementById("to_date").value;
-    cell4.innerHTML = "Pending";
-}
-
-function applycheckout(){
-    if(confirm("Are you sure you want to check out") == true){
-        window.alert("Checkout Request Successfully Registered");
-    };
-}
-
-function discontinue(){
-    if(confirm("Are you sure you want to discontinue") == true){
-        window.alert("Discontinue Request Successfully Registered");
-    };
-}
-function submit_suggestion(){
-        window.alert("Thank You for your Suggestion");
-    };
-
-function teacher_PIJ(){
-    document.getElementById("teacher_name").innerHTML = "Dr. Aakash Sinha"
-}
-function teacher_FSD(){
-    document.getElementById("teacher_name").innerHTML = "Dr. Preeti Sharma";
-}
-function teacher_DevOps(){
-    document.getElementById("teacher_name").innerHTML = "Dr. Piyush Saxena"
-}
-function teacher_SD(){
-    document.getElementById("teacher_name").innerHTML = "Mr. Amanpreet Singh";
-}
-function teacher_BC(){  
-    document.getElementById("teacher_name").innerHTML = "Ms. Harsimran Kaur"
-}
-function teacher_ES(){
-    document.getElementById("teacher_name").innerHTML = "Ms. Ishita Gupta";
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // FUNCTIONS FOR DISPLAYING PERSONAL INFO
 function show_personal_details(){
     const show_section = document.getElementById("personal_details");
@@ -129,7 +42,7 @@ function show_attendance(){
     show_section.style.display = "flex";
 }
 function show_timetable(){
-    const show_section = document.getElementById("academic_timetable");
+    const show_section = document.getElementById("academic_time_table");
     const all_pages = document.getElementsByClassName("main_page");
     for(let i = 0;i < all_pages.length;i++){
         all_pages[i].style.display = "none";
@@ -200,50 +113,6 @@ function show_transport_fee_payment(){
 }
 function show_discontinue(){
     const show_section = document.getElementById("transport_discontinue");
-    const all_pages = document.getElementsByClassName("main_page");
-    for(let i = 0;i < all_pages.length;i++){
-        all_pages[i].style.display = "none";
-    }
-    show_section.style.display = "flex";
-}
-
-// FUNCTIONS FOR DISPLAYING FEE AND PAYMENT
-function show_academic_fee(){
-    const show_section = document.getElementById("academic_fee");
-    const all_pages = document.getElementsByClassName("main_page");
-    for(let i = 0;i < all_pages.length;i++){
-        all_pages[i].style.display = "none";
-    }
-    show_section.style.display = "flex";
-}
-function show_fines_and_dues(){
-    const show_section = document.getElementById("fines_and_dues");
-    const all_pages = document.getElementsByClassName("main_page");
-    for(let i = 0;i < all_pages.length;i++){
-        all_pages[i].style.display = "none";
-    }
-    show_section.style.display = "flex";
-}
-function show_fee_payment_history(){
-    const show_section = document.getElementById("fee_payment_history");
-    const all_pages = document.getElementsByClassName("main_page");
-    for(let i = 0;i < all_pages.length;i++){
-        all_pages[i].style.display = "none";
-    }
-    show_section.style.display = "flex";
-}
-
-// FUNCTIONS FOR DISPLAYING SURVEYS AND FORMS
-function show_faculty_feedback(){
-    const show_section = document.getElementById("faculty_feedback");
-    const all_pages = document.getElementsByClassName("main_page");
-    for(let i = 0;i < all_pages.length;i++){
-        all_pages[i].style.display = "none";
-    }
-    show_section.style.display = "flex";
-}
-function show_suggestions(){
-    const show_section = document.getElementById("suggestions");
     const all_pages = document.getElementsByClassName("main_page");
     for(let i = 0;i < all_pages.length;i++){
         all_pages[i].style.display = "none";
