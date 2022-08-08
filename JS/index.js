@@ -74,18 +74,52 @@ function teacher_ES(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// FUNCTION TO DISPLAY MARKS ACCORDING TO SEMESTER
+function marks_sem1(){
+    const show_marks_section = document.getElementById("sem_1_marks");
+    const all_marks_pages = document.getElementsByClassName("marks_sections");
+    for(let i=0;i<all_marks_pages.length;i++){
+        all_marks_pages[i].style.display = "none";
+    }
+    document.getElementById("marks_text").style.display = "none";
+    show_marks_section.style.display = "block";
+}
+function marks_sem2(){
+    const show_marks_section = document.getElementById("sem_2_marks");
+    const all_marks_pages = document.getElementsByClassName("marks_sections");
+    for(let i=0;i<all_marks_pages.length;i++){
+        all_marks_pages[i].style.display = "none";
+    }
+    document.getElementById("marks_text").style.display = "none";
+    show_marks_section.style.display = "block";
+}
+function marks_sem3(){
+    const show_marks_section = document.getElementById("sem_3_marks");
+    const all_marks_pages = document.getElementsByClassName("marks_sections");
+    for(let i=0;i<all_marks_pages.length;i++){
+        all_marks_pages[i].style.display = "none";
+    }
+    document.getElementById("marks_text").style.display = "none";
+    show_marks_section.style.display = "block";
+}
+function marks_sem4(){
+    const show_marks_section = document.getElementById("sem_4_marks");
+    const all_marks_pages = document.getElementsByClassName("marks_sections");
+    for(let i=0;i<all_marks_pages.length;i++){
+        all_marks_pages[i].style.display = "none";
+    }
+    document.getElementById("marks_text").style.display = "none";
+    show_marks_section.style.display = "block";
+}
+function marks_sem5(){
+    const show_marks_section = document.getElementById("sem_5_marks");
+    const all_marks_pages = document.getElementsByClassName("marks_sections");
+    for(let i=0;i<all_marks_pages.length;i++){
+        all_marks_pages[i].style.display = "none";
+    }
+    document.getElementById("marks_text").style.display = "none";
+    show_marks_section.style.display = "block";
+}
 
 
 

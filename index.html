@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="try.js"></script>
 </head>
 <body>
     <section id="top_section">
@@ -32,7 +31,6 @@
                   <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_personal_details()">Personal Details</a></li>
                   <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_academic_details()">Academic Details</a></li>
                   <li><a class="dropdown-item bg-dark sub_menu" href="#" onclick="show_apply_leave()">Apply Medical Leave</a></li>
-                  <!-- <li><a class="dropdown-item bg-dark sub_menu" href="#">Academic Calendar</a></li> -->
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -420,15 +418,19 @@
         <a href="#" class="navbar-brand" id="marks_title">Marks</a>
         <select class="form-select" style="width:10vw;margin-left:30vw">
           <option selected>Choose Semester</option>
-          <option value="1" id="sem_1">1</option>
-          <option value="2" id="sem_2">2</option>
-          <option value="3" id="sem_3">3</option>
-          <option value="3" id="sem_4">4</option>
-          <option value="3" id="sem_5">5</option>
+          <option value="1" id="sem_1" onclick="marks_sem1()">1</option>
+          <option value="2" id="sem_2" onclick="marks_sem2()">2</option>
+          <option value="3" id="sem_3" onclick="marks_sem3()">3</option>
+          <option value="3" id="sem_4" onclick="marks_sem4()">4</option>
+          <option value="3" id="sem_5" onclick="marks_sem5()">5</option>
         </select>
       </nav>
+
+
+
+      <div id="marks_text">Choose Semester . . .</div>
       
-  <div id="sem_5_marks">
+  <div id="sem_5_marks" class="marks_sections">
   <table class="table table-hover table-responsive table-borderless table-striped" style="text-align:center">
     <tr>
       <th class="table-dark">Semester</th>
@@ -482,7 +484,7 @@
   </table>
 </div>
 
-<div id="sem_4_marks">
+<div id="sem_4_marks" class="marks_sections">
   <table class="table table-hover table-responsive table-borderless table-striped" style="text-align:center">
     <tr>
       <th class="table-dark">Semester</th>
@@ -553,7 +555,7 @@
   </table>
 </div>
 
-<div id="sem_3_marks">
+<div id="sem_3_marks" class="marks_sections">
   <table class="table table-hover table-responsive table-borderless table-striped" style="text-align:center">
     <tr>
       <th class="table-dark">Semester</th>
@@ -624,7 +626,7 @@
   </table>
 </div>
 
-<div id="sem_2_marks">
+<div id="sem_2_marks" class="marks_sections">
 
   <table class="table table-hover table-responsive table-borderless table-striped" style="text-align:center">
     <tr>
@@ -685,7 +687,7 @@
 </div>
 
 
-<div id="sem_1_marks">
+<div id="sem_1_marks" class="marks_sections">
   <table class="table table-hover table-responsive table-borderless table-striped" style="text-align:center">
     <tr>
       <th class="table-dark">Semester</th>
@@ -907,26 +909,26 @@
           <tr>
             <td>1</td>
             <td>Introduction to Python</td>
-            <td>ST-1</td>
-            <td>38/40</td>
+            <td>A</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>1</td>
             <td>Introduction to Web Development</td>
-            <td>ST-1</td>
-            <td>38/40</td>
+            <td>A</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>1</td>
             <td>Cybersecurity</td>
-            <td>ST-1</td>
-            <td>40/40</td>
+            <td>A</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>1</td>
             <td>Design Thinking</td>
-            <td>ST-1</td>
-            <td>35/40</td>
+            <td>A</td>
+            <td>5</td>
           </tr>
           <tr>
             <th class="table-success"></th>
@@ -937,26 +939,26 @@
           <tr>
             <td>2</td>
             <td>OOP System with Java</td>
-            <td>ST-1</td>
-            <td>38/40</td>
+            <td>A</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>2</td>
             <td>Advance Web Development</td>
-            <td>ST-1</td>
-            <td>38/40</td>
+            <td>A</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>2</td>
             <td>Advance Mathematics</td>
-            <td>ST-1</td>
-            <td>40/40</td>
+            <td>A</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>2</td>
             <td>Engineering Exploration</td>
-            <td>ST-1</td>
-            <td>35/40</td>
+            <td>A</td>
+            <td>5</td>
           </tr>
           <tr>
             <th class="table-success"></th>
@@ -967,32 +969,32 @@
           <tr>
             <td>3</td>
             <td>Data Structures and Algorithms</td>
-            <td>ST-1</td>
-            <td>38/40</td>
+            <td>A</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>3</td>
             <td>Database Management System</td>
-            <td>ST-1</td>
-            <td>38/40</td>
+            <td>A</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>3</td>
             <td>Introduction to Linux</td>
-            <td>ST-1</td>
-            <td>40/40</td>
+            <td>A</td>
+            <td>4</td>
           </tr>
           <tr>
             <td>3</td>
             <td>Discrete Structures</td>
-            <td>ST-1</td>
-            <td>35/40</td>
+            <td>A</td>
+            <td>3</td>
           </tr>
           <tr>
             <td>3</td>
             <td>Modern and Computational Physics</td>
-            <td>ST-1</td>
-            <td>37/40</td>
+            <td>A</td>
+            <td>3</td>
           </tr>
           <tr>
             <th class="table-success"></th>
@@ -1003,32 +1005,32 @@
           <tr>
             <td>4</td>
             <td>Design and Analysis of Algorithms</td>
-            <td>ST-1</td>
-            <td>38/40</td>
+            <td>A</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>4</td>
             <td>Computer Networks</td>
-            <td>ST-1</td>
-            <td>38/40</td>
+            <td>A</td>
+            <td>4</td>
           </tr>
           <tr>
             <td>4</td>
             <td>Operating System</td>
-            <td>ST-1</td>
-            <td>40/40</td>
+            <td>A</td>
+            <td>4</td>
           </tr>
           <tr>
             <td>4</td>
             <td>Computer System Architecture</td>
-            <td>ST-1</td>
-            <td>35/40</td>
+            <td>A</td>
+            <td>4</td>
           </tr>
           <tr>
             <td>4</td>
             <td>Elective Course - AWS</td>
-            <td>ST-1</td>
-            <td>37/40</td>
+            <td>A</td>
+            <td>3</td>
           </tr>
           <tr>
             <th class="table-success"></th>
@@ -1793,8 +1795,8 @@
   <section id="faculty_feedback" class="hidden_pages main_page bg-dark">
     <div class="container-fluid content_div" style="width: 90vw;height:75vh;">
       <nav class="navbar navbar-expand-sm">
-        <a href="#" class="navbar-brand" id="marks_title">Marks</a>
-        <select class="form-select" style="width:10vw;margin-left:30vw">
+        <a href="#" class="navbar-brand" id="feedback_title">Faculty Feedback</a>
+        <select class="form-select" style="width:10vw;margin-left:22vw">
           <option selected>Choose Subject</option>
           <option value="1" id="subject_1" onclick="teacher_PIJ()">PIJ</option>
           <option value="2" id="subject_2" onclick="teacher_FSD()">FSD</option>
@@ -1805,7 +1807,7 @@
         </select>
       </nav>
       
-  <>
+
     <table class="table table-hover table-responsive table-borderless table-striped" style="text-align:center">
       <tr><th>Teacher Name</th><td>:</td><td><span id="teacher_name"></span></td></tr>
     </table>
@@ -1835,15 +1837,15 @@
       <td>2</td>
       <td>The teacher explains each and every topic properly with examples.</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
+        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio2" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
+        <input type="radio" class="form-check-input options" id="ques1_radio6" name="optradio2" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio3" name="optradio" value="option3">
+        <input type="radio" class="form-check-input options" id="ques1_radio7" name="optradio2" value="option3">
         <label class="form-check-label labels" for="radio3">3</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio4" name="optradio" value="option4">
+        <input type="radio" class="form-check-input options" id="ques1_radio8" name="optradio2" value="option4">
         <label class="form-check-label labels" for="radio4">4</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio" value="option5">
+        <input type="radio" class="form-check-input options" id="ques1_radio9" name="optradio2" value="option5">
         <label class="form-check-label labels" for="radio5">5 ( Excellent )</label>
       </td>
     </tr>
@@ -1851,15 +1853,15 @@
       <td>3</td>
       <td>The teacher gives practical and industry level knowledge along with theory.</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio3" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
+        <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio3" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio3" name="optradio" value="option3">
+        <input type="radio" class="form-check-input options" id="ques1_radio3" name="optradio3" value="option3">
         <label class="form-check-label labels" for="radio3">3</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio4" name="optradio" value="option4">
+        <input type="radio" class="form-check-input options" id="ques1_radio4" name="optradio3" value="option4">
         <label class="form-check-label labels" for="radio4">4</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio" value="option5">
+        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio3" value="option5">
         <label class="form-check-label labels" for="radio5">5 ( Excellent )</label>
       </td>
     </tr>
@@ -1867,15 +1869,15 @@
       <td>4</td>
       <td>The teacher focuses on each and every student.</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio4" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
+        <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio4" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio3" name="optradio" value="option3">
+        <input type="radio" class="form-check-input options" id="ques1_radio3" name="optradio4" value="option3">
         <label class="form-check-label labels" for="radio3">3</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio4" name="optradio" value="option4">
+        <input type="radio" class="form-check-input options" id="ques1_radio4" name="optradio4" value="option4">
         <label class="form-check-label labels" for="radio4">4</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio" value="option5">
+        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio4" value="option5">
         <label class="form-check-label labels" for="radio5">5 ( Excellent )</label>
       </td>
     </tr>
@@ -1883,15 +1885,15 @@
       <td>5</td>
       <td> The teacher takes and clears doubts properly.</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio5" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
+        <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio5" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio3" name="optradio" value="option3">
+        <input type="radio" class="form-check-input options" id="ques1_radio3" name="optradio5" value="option3">
         <label class="form-check-label labels" for="radio3">3</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio4" name="optradio" value="option4">
+        <input type="radio" class="form-check-input options" id="ques1_radio4" name="optradio5" value="option4">
         <label class="form-check-label labels" for="radio4">4</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio" value="option5">
+        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio5" value="option5">
         <label class="form-check-label labels" for="radio5">5 ( Excellent )</label>
       </td>
     </tr>
@@ -1899,15 +1901,15 @@
       <td>6</td>
       <td> The teacher is punctual in the class.</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio6" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
+        <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio6" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio3" name="optradio" value="option3">
+        <input type="radio" class="form-check-input options" id="ques1_radio3" name="optradio6" value="option3">
         <label class="form-check-label labels" for="radio3">3</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio4" name="optradio" value="option4">
+        <input type="radio" class="form-check-input options" id="ques1_radio4" name="optradio6" value="option4">
         <label class="form-check-label labels" for="radio4">4</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio" value="option5">
+        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio6" value="option5">
         <label class="form-check-label labels" for="radio5">5 ( Excellent )</label>
       </td>
     </tr>
@@ -1915,15 +1917,15 @@
       <td>7</td>
       <td>How much satisfied are you with you teacher?</td>
       <td>
-        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio" value="option1">
+        <input type="radio" class="form-check-input options" id="ques1_radio1" name="optradio7" value="option1">
         <label class="form-check-label labels" for="radio1">1 ( Bad )</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio" value="option2">
+        <input type="radio" class="form-check-input options" id="ques1_radio2" name="optradio7" value="option2">
         <label class="form-check-label labels" for="radio2">2</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio3" name="optradio" value="option3">
+        <input type="radio" class="form-check-input options" id="ques1_radio3" name="optradio7" value="option3">
         <label class="form-check-label labels" for="radio3">3</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio4" name="optradio" value="option4">
+        <input type="radio" class="form-check-input options" id="ques1_radio4" name="optradio7" value="option4">
         <label class="form-check-label labels" for="radio4">4</label>
-        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio" value="option5">
+        <input type="radio" class="form-check-input options" id="ques1_radio5" name="optradio7" value="option5">
         <label class="form-check-label labels" for="radio5">5 ( Excellent )</label>
       </td>
     </tr>
@@ -1966,6 +1968,6 @@
   </div> 
 </section>
 
-<script src="/JS/index.js"></script>
+<script src="JS/index.js"></script>
 </body>
 </html>

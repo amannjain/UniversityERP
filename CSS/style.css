@@ -96,7 +96,7 @@ a{
     color:black;
 }
 #marks_title{
-    margin-left:40vw;
+    margin-left:42vw;
     font-size:2vw;
     color:black;
 }
@@ -222,4 +222,19 @@ a{
 }
 .hidden_pages{
     display:none;
+}
+.marks_sections{
+    display:none;
+}
+
+#marks_text{
+    text-align: center;
+    margin-top:5vh;
+    font-size: 1.2vw;
+    
+}
+#feedback_title{
+    margin-left:39vw;
+    font-size:2vw;
+    color:black;
 }
